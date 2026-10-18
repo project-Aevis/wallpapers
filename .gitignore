@@ -1,59 +1,52 @@
-
-# Created by https://www.toptal.com/developers/gitignore/api/cmake,linux,qt
-# Edit at https://www.toptal.com/developers/gitignore?templates=cmake,linux,qt
-
-### CMake ###
-CMakeLists.txt.user
+# ==============================================================================
+# Build Directories & CMake Artifacts
+# ==============================================================================
+build/
+build-*/
+*build-*/
+build.*/
+_build/
+bin/
+out/
+CMakeFiles/
 CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
+CMakeScripts/
+Testing/
 Makefile
+Makefile*
 cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
-_deps
+_deps/
 CMakeUserPresets.json
-
-### CMake Patch ###
-# External projects
+CMakeLists.txt.user*
 *-prefix/
 
-### Linux ###
-*~
-
-# temporary files which can be created if a process still has a handle open of a deleted file
-.fuse_hidden*
-
-# KDE directory preferences
-.directory
-
-# Linux trash folder which might appear on any partition or disk
-.Trash-*
-
-# .nfs files are created when an open file is removed but is still being accessed
-.nfs*
-
-### Qt ###
-# C++ objects and libs
+# ==============================================================================
+# C/C++ Compiled Objects, Binaries & Libraries
+# ==============================================================================
 *.slo
 *.lo
 *.o
+*.obj
 *.a
 *.la
 *.lai
 *.so
 *.so.*
-*.dll
 *.dylib
+*.dll
+*.exe
 
-# Qt-es
+# ==============================================================================
+# Qt & QML Generated Files
+# ==============================================================================
 object_script.*.Release
 object_script.*.Debug
 *_plugin_import.cpp
-/.qmake.cache
-/.qmake.stash
+.qmake.cache
+.qmake.stash
 *.pro.user
 *.pro.user.*
 *.qbs.user
@@ -65,30 +58,51 @@ qrc_*.cpp
 ui_*.h
 *.qmlc
 *.jsc
-Makefile*
-*build-*
 *.qm
 *.prl
-
-# Qt unit tests
+.qt/
 target_wrapper.*
 
-# QtCreator
-*.autosave
+# ==============================================================================
+# IDEs, Editors & Tooling
+# ==============================================================================
+# JetBrains / Android Studio / IntelliJ / CLion
+.idea/
+*.iws
+*.iml
 
-# QtCreator Qml
+# VS Code
+.vscode/
+
+# Qt Creator
+*.autosave
 *.qmlproject.user
 *.qmlproject.user.*
-
-# QtCreator CMake
-CMakeLists.txt.user*
-
-# QtCreator 4.8< compilation database 
-
-# QtCreator local machine specific files for imported projects
 *creator.user*
+*.user
 
-# End of https://www.toptal.com/developers/gitignore/api/cmake,linux,qt
-build/
+# Vim & Temporary Files
+*.swp
+*.swo
+*~
+.cache/
+__pycache__/
+*.pyc
 
-./ATTRIBUTION
+# Logs & Scratch
+*.log
+
+# ==============================================================================
+# Operating System & File System Junk
+# ==============================================================================
+.DS_Store
+Thumbs.db
+.directory
+.fuse_hidden*
+.Trash-*
+.nfs*
+
+# ==============================================================================
+# Repository Specific
+# ==============================================================================
+ATTRIBUTION

@@ -15,3 +15,4 @@ set(BACKGROUNDS
 )
 
 install(FILES ${BACKGROUNDS} DESTINATION /usr/share/backgrounds/cutefishos)
+install(FILES ${BACKGROUNDS} DESTINATION /usr/share/backgrounds/aevis)
